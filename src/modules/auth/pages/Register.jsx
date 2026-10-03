@@ -30,7 +30,7 @@ export default function Register() {
       <form className="login-card" onSubmit={handleRegister}>
         <img
           className="login-brand-icon"
-          src="/logo.png"
+          src="/images/logo.png"
           alt="Diary Farm logo"
         />
 

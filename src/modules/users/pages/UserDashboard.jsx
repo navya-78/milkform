@@ -100,11 +100,11 @@ export default function UserDashboard() {
     <main className="customer-dashboard">
       <header className="customer-header">
         <div>
-          <img
-            className="app-logo"
-            src="/logo.png"
-            alt="Diary Farm logo"
-          />
+     <img
+  className="app-logo"
+  src="/images/logo.png"
+  alt="Diary Farm logo"
+/>
           <h1>Diary Farm</h1>
           <p>Welcome, {user?.email ?? "Customer"}</p>
         </div>

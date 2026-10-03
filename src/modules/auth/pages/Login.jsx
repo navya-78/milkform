@@ -41,7 +41,7 @@ export default function Login() {
       <form className="login-card" onSubmit={handleSubmit}>
         <img
           className="login-brand-icon"
-          src="/logo.png"
+          src="/images/logo.png"
           alt="Diary Farm logo"
         />
 

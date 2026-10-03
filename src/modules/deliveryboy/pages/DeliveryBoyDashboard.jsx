@@ -80,7 +80,7 @@ export default function DeliveryBoyDashboard() {
         <div>
           <img
             className="app-logo"
-            src="/logo.png"
+            src="/images/logo.png"
             alt="Diary Farm logo"
           />
           <h1>Delivery Agent Dashboard</h1>

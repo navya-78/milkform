@@ -85,7 +85,7 @@ export default function AnalyticsDashboard() {
         <div>
           <img
             className="app-logo"
-            src="/logo.png"
+            src="/images/logo.png"
             alt="Diary Farm logo"
           />
           <h1>Admin Dashboard</h1>
