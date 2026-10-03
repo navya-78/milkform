@@ -1,0 +1,343 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    linear-gradient(rgba(7, 30, 55, 0.5), rgba(7, 30, 55, 0.5)),
+    url("/images/dairy-farm.png") center / cover no-repeat fixed;
+}
+
+.login-card {
+  width: min(100%, 440px);
+  padding: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 20px 60px rgba(5, 25, 45, 0.25);
+  backdrop-filter: blur(14px);
+}
+
+.login-brand-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+}
+
+.login-card h1 {
+  margin: 0;
+  color: #153454;
+  text-align: center;
+}
+
+.login-card > p {
+  margin: 10px 0 24px;
+  color: #62758a;
+  text-align: center;
+}
+
+.login-card label {
+  display: block;
+  margin: 16px 0 7px;
+  color: #263d54;
+  font-weight: 600;
+}
+
+.login-card input,
+.login-card select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #cbd7e2;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #17324d;
+  font: inherit;
+}
+
+.login-card input:focus,
+.login-card select:focus {
+  outline: 3px solid rgba(38, 119, 210, 0.2);
+  border-color: #2677d2;
+}
+
+.login-card button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 22px;
+  border: 0;
+  border-radius: 10px;
+  background: #1768c4;
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #0d55a5;
+}
+
+.login-register {
+  margin: 20px 0 0 !important;
+  text-align: center;
+}
+
+.login-card a {
+  color: #1768c4;
+  font-weight: 600;
+}
+
+.login-error {
+  color: #b42318 !important;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 26px 20px;
+  }
+}
+.role-picker-label {
+  margin: 24px 0 12px;
+  color: #263d54;
+  font-weight: 700;
+  text-align: left;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.role-card {
+  display: flex;
+  min-height: 120px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 12px 8px;
+  border: 1px solid #cbd7e2;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.76);
+  color: #17324d;
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.role-card:hover {
+  transform: translateY(-2px);
+  border-color: #1768c4;
+}
+
+.role-card.selected {
+  border: 2px solid #1768c4;
+  background: #eaf3ff;
+  box-shadow: 0 0 0 3px rgba(23, 104, 196, 0.12);
+}
+
+.role-card-icon {
+  font-size: 28px;
+}
+
+.role-card small {
+  color: #62758a;
+  font-size: 12px;
+  text-align: center;
+}
+
+.visually-hidden,
+.role-select-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+@media (max-width: 480px) {
+  .role-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .role-card {
+    min-height: 82px;
+  }
+}
+.social-auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0 14px;
+  color: #62758a;
+}
+
+.social-auth-divider::before,
+.social-auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #cbd7e2;
+}
+
+.social-auth-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.login-card .social-auth-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 46px;
+  margin: 0;
+  border: 1px solid #cbd7e2;
+  background: white;
+  color: #17324d;
+}
+
+.google-mark {
+  color: #4285f4;
+  font-size: 20px;
+}
+
+.apple-mark {
+  color: #111;
+  font-size: 18px;
+}
+.role-picker-label {
+  margin: 24px 0 12px;
+  color: #263d54;
+  font-weight: 700;
+  text-align: left;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.login-card .role-card {
+  display: flex;
+  width: 100%;
+  min-height: 120px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin: 0;
+  padding: 12px 8px;
+  border: 1px solid #cbd7e2;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #17324d;
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.login-card .role-card:hover {
+  transform: translateY(-2px);
+  border-color: #1768c4;
+}
+
+.login-card .role-card.selected {
+  border: 2px solid #1768c4;
+  background: #eaf3ff;
+  box-shadow: 0 0 0 3px rgba(23, 104, 196, 0.12);
+}
+
+.role-card-icon {
+  font-size: 28px;
+}
+
+.login-card .role-card small {
+  color: #62758a;
+  font-size: 12px;
+  text-align: center;
+}
+
+.social-auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0 14px;
+  color: #62758a;
+}
+
+.social-auth-divider::before,
+.social-auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #cbd7e2;
+}
+
+.social-auth-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.login-card .social-auth-button {
+  display: flex;
+  width: 100%;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin: 0;
+  border: 1px solid #cbd7e2;
+  border-radius: 10px;
+  background: white;
+  color: #17324d;
+  font: inherit;
+  cursor: pointer;
+}
+
+.login-card .social-auth-button:hover {
+  background: #f2f7fc;
+}
+
+.google-mark {
+  color: #4285f4;
+  font-size: 20px;
+}
+
+.apple-mark {
+  color: #111;
+  font-size: 18px;
+}
+
+.visually-hidden,
+.role-select-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+@media (max-width: 480px) {
+  .role-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .login-card .role-card {
+    min-height: 82px;
+  }
+}

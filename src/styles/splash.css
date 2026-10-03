@@ -1,0 +1,53 @@
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(145deg, #1462d5, #2879ed);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.splash-screen::after {
+  position: absolute;
+  right: -15%;
+  bottom: -28%;
+  left: -15%;
+  height: 48%;
+  border-radius: 50% 50% 0 0;
+  background: #fff;
+  content: "";
+}
+
+.splash-logo,
+.splash-screen h1,
+.splash-screen p {
+  position: relative;
+  z-index: 1;
+}
+
+.splash-logo {
+  display: grid;
+  width: 110px;
+  height: 110px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 3.5rem;
+}
+
+.splash-screen h1 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: clamp(2.5rem, 9vw, 4rem);
+  font-weight: 800;
+}
+
+.splash-screen p {
+  margin: 0;
+  font-size: 1rem;
+}
